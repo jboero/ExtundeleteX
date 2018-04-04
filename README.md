@@ -1,19 +1,40 @@
+# ExtundeleteX
+
+## Disclaimer - Still broken
+Currently ExtundeleteX is still broken and will segfault when you attempt to use it.
+
+Once it is fixed this disclaimer will be removed.
+
+## Requirements
 To compile and install this program, you should first
 install the binary and development packages for
 e2fsprogs and e2fslibs.  You must also have a C++
 compiler and a make utility to compile extundelete.
 
-To compile the program, run the following commands
+## Installation
+#### Acquiring sources
+To compile the program from source, either download the 
+[latest release](https://github.com/AbysmalBiscuit/ExtundeleteX/releases) or
+clone the repository to build the latest version:
+```bash
+git clone https://github.com/AbysmalBiscuit/ExtundeleteX.git
+```
+#### Building
+run the following commands
 from the extundelete-x.y.z directory:
+```bash
 ./configure
 make
-
+```
+#### Installing
 The extundelete program may be run as-is from the build
 directory, or you may wish to install it to a directory
 that is shared with other executable programs, which you
 may do by running the following command:
+```bash
 make install
-
+```
+## Usage
 To see the various supported options, type:
 extundelete --help
 
@@ -43,3 +64,8 @@ If you have deleted the directory 'important', you can run:
 extundelete /dev/sda3 --restore-directory user/an/important
 Or if you have deleted everything, you can run:
 extundelete /dev/sda3 --restore-all
+
+## Notice
+I am not the original author of extundelete and have forked it from the 
+[original sourceforge repo](https://sourceforge.net/projects/extundelete/)
+because it seems to have been abandoned.

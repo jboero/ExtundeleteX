@@ -3,6 +3,9 @@ NOTES
 e2fsprogs-packages
 test
 
+# CLion
+.idea
+
 # C++ ignore
 # Prerequisites
 *.d
