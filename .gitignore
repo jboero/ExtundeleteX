@@ -1,41 +1,23 @@
-# Specific ignore
-NOTES
-e2fsprogs-packages
-test
+# All files and directories in general except certain files
+*
+!*.h
+!*.c
+!*.cc
+!*.cmake
+!*.hpp
+!*.cpp
+!*.md
+!CMakeLists.txt
+!LICENSE
 
-# CLion
-.idea
+# Apply the above specific rules to all files in src/ dir
+!cmake/*.cmake
+!src/*.h
+!src/*.c
+!src/*.cc
+!src/*.hpp
+!src/*.cpp
+!src/CMakeLists.txt
 
-# C++ ignore
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Hidden files and directories
+.*

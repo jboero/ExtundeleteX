@@ -1,141 +1,136 @@
-/* config.h.in.  Generated from configure.ac by autoheader.  */
-
 /* Define if building universal (internal helper macro) */
-#undef AC_APPLE_UNIVERSAL_BUILD
-
-/* Define to 1 if the system has the type `blk64_t'. */
-#undef HAVE_BLK64_T
-
-/* Define to 1 if you have the `ext2fs_blocks_count' function. */
-#undef HAVE_EXT2FS_BLOCKS_COUNT
-
-/* Define to 1 if you have the `ext2fs_bmap2' function. */
-#undef HAVE_EXT2FS_BMAP2
-
-/* Define to 1 if you have the `ext2fs_extent_open2' function. */
-#undef HAVE_EXT2FS_EXTENT_OPEN2
-
-/* Define to 1 if you have the `ext2fs_get_array' function. */
-#undef HAVE_EXT2FS_GET_ARRAY
-
-/* Define to 1 if you have the `ext2fs_get_generic_bitmap_start' function. */
-#undef HAVE_EXT2FS_GET_GENERIC_BITMAP_START
-
-/* Define to 1 if you have the `ext2fs_get_generic_bmap_start' function. */
-#undef HAVE_EXT2FS_GET_GENERIC_BMAP_START
-
-/* Define to 1 if you have the `ext2fs_group_of_blk2' function. */
-#undef HAVE_EXT2FS_GROUP_OF_BLK2
-
-/* Define to 1 if you have the `ext2fs_inode_table_loc' function. */
-#undef HAVE_EXT2FS_INODE_TABLE_LOC
-
-/* Define to 1 if you have the `ext2fs_read_dir_block3' function. */
-#undef HAVE_EXT2FS_READ_DIR_BLOCK3
-
-/* Define to 1 if you have the `ext2fs_test_block_bitmap2' function. */
-#undef HAVE_EXT2FS_TEST_BLOCK_BITMAP2
-
-/* Define to 1 if you have the `ext2fs_test_inode_bitmap2' function. */
-#undef HAVE_EXT2FS_TEST_INODE_BITMAP2
-
-/* Define to 1 if you have the <fcntl.h> header file. */
-#undef HAVE_FCNTL_H
-
-/* Define to 1 if you have the <getopt.h> header file. */
-#undef HAVE_GETOPT_H
-
-/* Define to 1 if you have the <inttypes.h> header file. */
-#undef HAVE_INTTYPES_H
-
-/* Define to 1 if you have the `com_err' library (-lcom_err). */
-#undef HAVE_LIBCOM_ERR
+#cmakedefine AC_APPLE_UNIVERSAL_BUILD @AC_APPLE_UNIVERSAL_BUILD@
 
 /* Define to 1 if you have the `ext2fs' library (-lext2fs). */
-#undef HAVE_LIBEXT2FS
+#cmakedefine HAVE_LIBEXT2FS @HAVE_LIBEXT2FS@
+
+/* Define to 1 if the system has the type `blk64_t'. */
+#cmakedefine HAVE_BLK64_T @HAVE_BLK64_T@
+
+/* Define to 1 if you have the `ext2fs_blocks_count' function. */
+#cmakedefine HAVE_EXT2FS_BLOCKS_COUNT @HAVE_EXT2FS_BLOCKS_COUNT@
+
+/* Define to 1 if you have the `ext2fs_bmap2' function. */
+#cmakedefine HAVE_EXT2FS_BMAP2 @HAVE_EXT2FS_BMAP2@
+
+/* Define to 1 if you have the `ext2fs_extent_open2' function. */
+#cmakedefine HAVE_EXT2FS_EXTENT_OPEN2 @HAVE_EXT2FS_EXTENT_OPEN2@
+
+/* Define to 1 if you have the `ext2fs_get_array' function. */
+#cmakedefine HAVE_EXT2FS_GET_ARRAY @HAVE_EXT2FS_GET_ARRAY@
+
+/* Define to 1 if you have the `ext2fs_get_generic_bitmap_start' function. */
+#cmakedefine HAVE_EXT2FS_GET_GENERIC_BITMAP_START @HAVE_EXT2FS_GET_GENERIC_BITMAP_START@
+
+/* Define to 1 if you have the `ext2fs_get_generic_bmap_start' function. */
+#cmakedefine HAVE_EXT2FS_GET_GENERIC_BMAP_START @HAVE_EXT2FS_GET_GENERIC_BMAP_START@
+
+/* Define to 1 if you have the `ext2fs_group_of_blk2' function. */
+#cmakedefine HAVE_EXT2FS_GROUP_OF_BLK2 @HAVE_EXT2FS_GROUP_OF_BLK2@
+
+/* Define to 1 if you have the `ext2fs_inode_table_loc' function. */
+#cmakedefine HAVE_EXT2FS_INODE_TABLE_LOC @HAVE_EXT2FS_INODE_TABLE_LOC@
+
+/* Define to 1 if you have the `ext2fs_read_dir_block3' function. */
+#cmakedefine HAVE_EXT2FS_READ_DIR_BLOCK3 @HAVE_EXT2FS_READ_DIR_BLOCK3@
+
+/* Define to 1 if you have the `ext2fs_test_block_bitmap2' function. */
+#cmakedefine HAVE_EXT2FS_TEST_BLOCK_BITMAP2 @HAVE_EXT2FS_TEST_BLOCK_BITMAP2@
+
+/* Define to 1 if you have the `ext2fs_test_inode_bitmap2' function. */
+#cmakedefine HAVE_EXT2FS_TEST_INODE_BITMAP2 @HAVE_EXT2FS_TEST_INODE_BITMAP2@
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#cmakedefine HAVE_FCNTL_H @HAVE_FCNTL_H@
+
+/* Define to 1 if you have the <getopt.h> header file. */
+#cmakedefine HAVE_GETOPT_H @HAVE_GETOPT_H@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define to 1 if you have the `com_err' library (-lcom_err). */
+#cmakedefine HAVE_LIBCOM_ERR @HAVE_LIBCOM_ERR@
 
 /* Define to 1 if you have the <memory.h> header file. */
-#undef HAVE_MEMORY_H
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
 
 /* Define to 1 if you have the `memset' function. */
-#undef HAVE_MEMSET
+#cmakedefine HAVE_MEMSET @HAVE_MEMSET@
 
 /* Define to 1 if you have the `mkdir' function. */
-#undef HAVE_MKDIR
+#cmakedefine HAVE_MKDIR @HAVE_MKDIR@
 
 /* Define to 1 if `stat' has the bug that it succeeds when given the
    zero-length file name argument. */
-#undef HAVE_STAT_EMPTY_STRING_BUG
+#cmakedefine HAVE_STAT_EMPTY_STRING_BUG @HAVE_STAT_EMPTY_STRING_BUG@
 
 /* Define to 1 if stdbool.h conforms to C99. */
-#undef HAVE_STDBOOL_H
+#cmakedefine HAVE_STDBOOL_H @HAVE_STDBOOL_H@
 
 /* Define to 1 if you have the <stdint.h> header file. */
-#undef HAVE_STDINT_H
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
 
 /* Define to 1 if you have the <stdlib.h> header file. */
-#undef HAVE_STDLIB_H
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
 
 /* Define to 1 if you have the `strerror' function. */
-#undef HAVE_STRERROR
+#cmakedefine HAVE_STRERROR @HAVE_STRERROR@
 
 /* Define to 1 if you have the <strings.h> header file. */
-#undef HAVE_STRINGS_H
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
 
 /* Define to 1 if you have the <string.h> header file. */
-#undef HAVE_STRING_H
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
 
 /* Define to 1 if you have the `strtol' function. */
-#undef HAVE_STRTOL
+#cmakedefine HAVE_STRTOL @HAVE_STRTOL@
 
 /* Define to 1 if you have the `strtoul' function. */
-#undef HAVE_STRTOUL
+#cmakedefine HAVE_STRTOUL @HAVE_STRTOUL@
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
-#undef HAVE_SYS_STAT_H
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
 
 /* Define to 1 if you have the <sys/types.h> header file. */
-#undef HAVE_SYS_TYPES_H
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#undef HAVE_UNISTD_H
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
 
 /* Define to 1 if you have the <utime.h> header file. */
-#undef HAVE_UTIME_H
+#cmakedefine HAVE_UTIME_H @HAVE_UTIME_H@
 
 /* Define to 1 if the system has the type `_Bool'. */
-#undef HAVE__BOOL
+#cmakedefine HAVE__BOOL @HAVE__BOOL@
 
 /* Define to 1 if `lstat' dereferences a symlink specified with a trailing
    slash. */
-#undef LSTAT_FOLLOWS_SLASHED_SYMLINK
+#cmakedefine LSTAT_FOLLOWS_SLASHED_SYMLINK @LSTAT_FOLLOWS_SLASHED_SYMLINK@
 
 /* Name of package */
-#undef PACKAGE
+#cmakedefine PACKAGE @PACKAGE@
 
 /* Define to the address where bug reports for this package should be sent. */
-#undef PACKAGE_BUGREPORT
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
 
 /* Define to the full name of this package. */
-#undef PACKAGE_NAME
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
 
 /* Define to the full name and version of this package. */
-#undef PACKAGE_STRING
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
 
 /* Define to the one symbol short name of this package. */
-#undef PACKAGE_TARNAME
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
 
 /* Define to the home page for this package. */
-#undef PACKAGE_URL
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
 
 /* Define to the version of this package. */
-#undef PACKAGE_VERSION
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
 
 /* Define to 1 if you have the ANSI C header files. */
-#undef STDC_HEADERS
-
-/* Version number of package */
-#undef VERSION
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */
@@ -145,24 +140,29 @@
 # endif
 #else
 # ifndef WORDS_BIGENDIAN
-#  undef WORDS_BIGENDIAN
+#cmakedefine WORDS_BIGENDIAN
 # endif
 #endif
 
+/* Enable large inode numbers on Mac OS X 10.5.  */
+#ifndef _DARWIN_USE_64_BIT_INODE
+# define _DARWIN_USE_64_BIT_INODE 1
+#endif
+
 /* Number of bits in a file offset, on hosts where this is settable. */
-#undef _FILE_OFFSET_BITS
+#cmakedefine _FILE_OFFSET_BITS @_FILE_OFFSET_BITS@
 
 /* Define for large files, on AIX-style hosts. */
-#undef _LARGE_FILES
+#cmakedefine _LARGE_FILES @_LARGE_FILES@
 
 /* Define to empty if `const' does not conform to ANSI C. */
-#undef const
+#cmakedefine const @const@
 
 /* Define to `__inline__' or `__inline' if that's what the C compiler
    calls it, or to nothing if 'inline' is not supported under any name.  */
 #ifndef __cplusplus
-#undef inline
+#cmakedefine inline
 #endif
 
 /* Define to `unsigned int' if <sys/types.h> does not define. */
-#undef size_t
+#cmakedefine size_t @size_t@

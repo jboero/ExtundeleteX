@@ -33,7 +33,8 @@ std::ostream& operator<<(std::ostream& os, const ext2_inode& inode)
   os << "File flags: " << inode.i_flags << std::endl;
   os << "File version (for NFS): " << inode.i_generation << std::endl;
   os << "File ACL: " << inode.i_file_acl << std::endl;
-  os << "Directory ACL: " << inode.i_dir_acl << std::endl;
+  // os << "Directory ACL: " << inode.i_dir_acl << std::endl;
+  os << "Directory ACL: " << inode.i_size_high << std::endl;
   os << "Fragment address: " << inode.i_faddr << std::endl;
   os << "Direct blocks: ";
   for (int n = 0; n < EXT2_NDIR_BLOCKS; n++)
