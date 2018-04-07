@@ -8,7 +8,7 @@ include(TestBigEndian)
 # Check that libext2fs.so is available
 check_library_exists(libext2fs.so "_init" libext2fs.so HAVE_LIBEXT2FS)
 if (NOT HAVE_LIBEXT2FS)
-  message(FATAL_ERROR "libext2fs was not found. Please install it or make sure your lib directory is in the PATH variable.")
+  message(FATAL_ERROR "libext2fs.so was not found. Please install it or make sure your lib directory is in the PATH environment variable.")
 endif()
 #find_library(LIBEXT2FS
 #    NAMES libext2fs.so
@@ -64,6 +64,13 @@ check_include_file(unistd.h HAVE_UNISTD_H)
 check_include_file(utime.h HAVE_UTIME_H)
 
 
+# Check for various libraries
+check_library_exists(libcom_err.so "_init" libcom_err.so HAVE_LIBCOM_ERR)
+if (NOT HAVE_LIBCOM_ERR)
+  message(FATAL_ERROR "libcom_err.so was not found. Please install it or make sure your lib directory is in the PATH environment variable.")
+endif()
+
+
 # Check for various ext2fs functions and types
 set(CMAKE_EXTRA_INCLUDE_FILES ext2fs/ext2fs.h)
 
@@ -97,15 +104,7 @@ check_type_size(ext2fs_test_inode_bitmap2 HAVE_EXT2FS_TEST_INODE_BITMAP2)
 CMAKE_RESET_CHECK_STATE()
 
 
-# Check for various types and functions
-check_type_size(com_err HAVE_LIBCOM_ERR)
-
-check_type_size(strerror HAVE_STRERROR)
-
-check_type_size(strtol HAVE_STRTOL)
-
-check_type_size(strtoul HAVE_STRTOUL)
-
+# Check for _Bool
 check_type_size(_Bool HAVE__BOOL)
 
 
@@ -139,6 +138,7 @@ test_big_endian(WORDS_BIGENDIAN)
 # TODO: add definition for large files, on AIX-style hosts
 # TODO: Define to empty if `const' does not conform to ANSI C
 # TODO: Define to `unsigned int' if <sys/types.h> does not define.
+# TODO: Define if building universal (internal helper macro)
 # Check file bit offset
 #CHECK_FILE_BIT_OFFSET()
 
