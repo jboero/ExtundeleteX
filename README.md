@@ -1,10 +1,4 @@
 # ExtundeleteX
-
-## Disclaimer - Still broken
-Currently ExtundeleteX is still broken and will segfault when you attempt to use it.
-
-Once it is fixed this disclaimer will be removed.
-
 ## Requirements
 To compile and install this program, you should first install the binary and development packages for e2fsprogs and e2fslibs.  You must also have a C++ compiler and a make utility to compile extundelete.
 
