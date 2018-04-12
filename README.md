@@ -9,14 +9,15 @@ Once it is fixed this disclaimer will be removed.
 To compile and install this program, you should first install the binary and development packages for e2fsprogs and e2fslibs.  You must also have a C++ compiler and a make utility to compile extundelete.
 
 ## Installation
-#### Acquiring sources
+### Acquiring sources
 To compile the program from source, either download the [latest release](https://github.com/AbysmalBiscuit/ExtundeleteX/releases) or clone the repository to build the latest version:
 ```bash
 git clone https://github.com/AbysmalBiscuit/ExtundeleteX.git
 ```
 
-#### Building
-run the following commands from the extundelete-x.y.z directory:
+### Building Using make
+#### Configuring and building
+Run the following commands from the `extundeletex-x.y.z` or `ExtundeleteX` directory:
 ```bash
 ./configure
 make
@@ -32,17 +33,43 @@ make install
 #### Example full installation compilation instructions for extundelete:
 ```bash
 git clone https://github.com/AbysmalBiscuit/ExtundeleteX.git
-cd extundelete-0.2.0
+cd ExtundeleteX
 ./configure
 make
 src/extundelete --help
 ```
+
+### Building Using cmake
+#### Configuring and building
+Run the following commands from the `extundeletex-x.y.z` or `ExtundeleteX` directory:
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+#### Installing
+Run the following commands:
+```bash
+make install
+```
+
+#### Example full installation compilation instructions for ExtundeleteX:
+```bash
+git clone https://github.com/AbysmalBiscuit/ExtundeleteX.git
+cd ExtundeleteX
+mkdir build
+cd build
+cmake ..
+src/extundelete --help
+```
+
 ## Usage
 To see the various supported options, type:
 ```bash
 extundelete --help
 ```
-#### Sample use case scenario
+### Sample use case scenario
 _Note that some of the following commands will require special permissions to complete._  
 Adding 'sudo ' before the command is one way to ensure you have the necessary permissions.
 

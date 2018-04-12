@@ -17,3 +17,6 @@ set(HEADERS
 
 add_executable(extundelete extundelete.cc  cli.cc block.c  insertionops.cc  block.h  extundelete.h  extundelete-priv.h  jfs_compat.h  kernel-jbd.h)
 target_link_libraries(extundelete ext2fs com_err)
+
+install(TARGETS extundelete DESTINATION bin)
+
