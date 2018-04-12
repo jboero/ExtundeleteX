@@ -55,6 +55,7 @@ cd ExtundeleteX
 mkdir build
 cd build
 cmake ..
+make
 src/extundelete --help
 ```
 
